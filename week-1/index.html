@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Workshop 1</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    </head>
+    <body>
+        <h1 class="text-3xl font-bold underline">Area Calculator</h1>
+        <p>Calculate the area for a square, triangle, or trapezoid!</p>
+
+        <div id="sq-stuff" class="calc-container">
+            <h3>Square Calculator</h3>
+            <p>Calculate the area of a square using fancy maths and stuff. width*height</p>
+            <div class="value-input">
+                <label for="sq-width">Width:</label>
+                <input type="number" id="sq-width" name="sq-width" />
+                <select name="sq-width-type" id="sq-width-type">
+                    <option value="mm">Millimetres</option>
+                    <option value="cm">Centimetres</option>
+                    <option value="m">Metres</option>
+                    <option value="km">Kilometres</option>
+                </select>
+            </div>
+
+            <div class="value-input">
+                <label for="sq-height">Height:</label>
+                <input type="number" id="square-height" name="sq-height" />
+                <select name="sq-height-type" id="sq-height-type">
+                    <option value="mm">Millimetres</option>
+                    <option value="cm">Centimetres</option>
+                    <option value="m">Metres</option>
+                    <option value="km">Kilometres</option>
+                </select>
+            </div>
+
+            <button id="sq-submit">Calculate!</button>
+            <button id="sq-clear">Clear</button>
+        </div>
+
+        <div id="tri-stuff" class="calc-container">
+            <h3>Triangle Calculator</h3>
+            <p>Calculate the area of a triangle using fancy maths and stuff. base*height</p>
+            <div class="value-input">
+                <label for="tri-base">Base:</label>
+                <input type="number" id="tri-base" name="tri-base" />
+                <select name="tri-width-type" id="tri-width-type">
+                    <option value="mm">Millimetres</option>
+                    <option value="cm">Centimetres</option>
+                    <option value="m">Metres</option>
+                    <option value="km">Kilometres</option>
+                </select>
+            </div>
+
+            <div class="value-input">
+                <label for="tri-height">Height:</label>
+                <input type="number" id="tri-height" name="tri-height" />
+                <select name="tri-height-type" id="tri-height-type">
+                    <option value="mm">Millimetres</option>
+                    <option value="cm">Centimetres</option>
+                    <option value="m">Metres</option>
+                    <option value="km">Kilometres</option>
+                </select>
+            </div>
+
+            <button id="tri-submit">Calculate!</button>
+            <button id="tri-clear">Clear</button>
+        </div>
+
+        <div id="trap-stuff" class="calc-container">
+            <h3>Trapezoid Calculator</h3>
+            <p>Calculate the area of a trapezoid using fancy maths and stuff. ((base+top)/2)*height</p>
+            <div class="value-input">
+                <label for="trap-base">Base:</label>
+                <input type="number" id="trap-base" name="trap-base" />
+                <select name="trap-base-type" id="trap-base-type">
+                    <option value="mm">Millimetres</option>
+                    <option value="cm">Centimetres</option>
+                    <option value="m">Metres</option>
+                    <option value="km">Kilometres</option>
+                </select>
+            </div>
+
+            <div class="value-input">
+                <label for="trap-top">Top:</label>
+                <input type="number" id="trap-top" name="trap-top" />
+                <select name="trap-top-type" id="trap-top-type">
+                    <option value="mm">Millimetres</option>
+                    <option value="cm">Centimetres</option>
+                    <option value="m">Metres</option>
+                    <option value="km">Kilometres</option>
+                </select>
+            </div>
+
+            <div class="value-input">
+                <label for="trap-height">Height:</label>
+                <input type="number" id="trap-height" name="trap-height" />
+                <select name="trap-height-type" id="trap-height-type">
+                    <option value="mm">Millimetres</option>
+                    <option value="cm">Centimetres</option>
+                    <option value="m">Metres</option>
+                    <option value="km">Kilometres</option>
+                </select>
+            </div>
+
+            <button id="trap-submit">Calculate!</button>
+            <button id="trap-clear">Clear</button>
+        </div>
+    </body>
+</html>
